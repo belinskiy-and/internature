@@ -308,10 +308,11 @@ button {
     text-transform: lowercase;
 
     list-style: decimal;
+    counter-reset: list-count;
 }
 
 .about-item::before {
-    content: '';
+    content: counter(list-count);
 
     display: flex;
     justify-content: center;
@@ -328,7 +329,7 @@ button {
     border-radius: 50%;
 }
 
-.about-item:nth-child(1):before {
+/* .about-item:nth-child(1):before {
     content: '1';
 }
 
@@ -338,7 +339,7 @@ button {
 
 .about-item:nth-child(3):before {
     content: '3';
-}
+} */
 
 /* --------------- APPROACH SECTION --------------- */
 
