@@ -294,6 +294,8 @@ button {
 .about-list {
     display: flex;
     gap: 190px;
+    list-style: none;
+    counter-reset: list-count;
 }
 
 .about-item {
