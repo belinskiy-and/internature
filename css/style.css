@@ -308,7 +308,7 @@ button {
     text-transform: lowercase;
 
     list-style: decimal;
-    counter-reset: list-count;
+    counter-increment: list-count;
 }
 
 .about-item::before {
